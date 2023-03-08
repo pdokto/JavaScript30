@@ -5,6 +5,7 @@
   <title>Scoped CSS Variables and JS</title>
   <link rel="icon" href="https://fav.farm/🔥" />
 </head>
+
 <body>
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
 
@@ -66,7 +67,7 @@
       const suffix = this.dataset.sizing || ''; //because base color input has no data-sizing it needs an or 'nothing'
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
     }
-
+ 
     inputs.forEach(input => input.addEventListener('change', handleUpdate)); //listens to the final input when mousebuttonn is released
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate)); //listens also to every movement of the sliders and gives the values
   </script>
