@@ -12,4 +12,6 @@ function togglePlay() {
     } else {
         video.pause();
     }
+
+    
 }
